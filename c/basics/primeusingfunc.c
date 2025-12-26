@@ -1,0 +1,28 @@
+#include <stdio.h>
+void prime(int n){
+    int c=0;
+    if(n==0||n==1){
+        printf("not prime");
+    }
+    else if(n==2){
+        printf("Only even prime");
+    }else{
+    for(int i=2;i<=n-1;i++){
+        if(n%i==0){
+            c++;
+        }
+    }
+    if(c==0){
+        printf("Prime");
+    }else{
+        printf("Not prime");
+    }
+}
+}
+int main() {
+    int n;
+    printf("Enter the number:");
+    scanf("%d",&n);
+    prime(n);
+    return 0;
+}
