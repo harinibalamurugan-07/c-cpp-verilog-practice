@@ -27,3 +27,23 @@ int main() {
     
     return 0;
 }
+method 2:
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<math.h>
+int main() {
+    int n,ans=0,i=0;
+    printf("Enter:");
+    scanf("%d",&n);
+    while(n!=0){
+        if(n%10==0){
+            ans=ans+1*pow(10,i);
+        }else{
+            ans=ans+(n%10)*pow(10,i);
+        }
+        n=n/10;
+        i++;
+    }
+    printf("%d",ans);
+    return 0;
+}
