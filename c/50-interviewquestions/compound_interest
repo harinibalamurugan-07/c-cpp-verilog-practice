@@ -1,0 +1,13 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<math.h>
+int main() {
+    double r,n;
+    double p;
+    printf("Enter the principle amount,rate,years:");
+    scanf("%lf %lf %lf",&p,&r,&n);
+    double ci;
+    ci=((double)(p*pow((1+r/100),n)))-p;
+    printf("compound interest:%lf",ci);
+    return 0;
+}
